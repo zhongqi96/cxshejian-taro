@@ -1,0 +1,121 @@
+/* components/keyboard/keyboard.wxss */
+.ripple {
+    position: relative;
+    overflow: hidden;
+}
+.ripple:after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;   
+    background-image: radial-gradient(circle, #666 10%, transparent 10.01%);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    transform: scale(10, 10);
+    opacity: 0;
+    transition: transform .3s, opacity .5s;
+}
+.ripple:active:after {
+    transform: scale(0, 0);
+    opacity: .3;    
+    transition: 0s;
+}
+
+.keyboardContent{
+  display: flex;
+  position: fixed;
+  // z-index: 100000;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  // background-color: rgba(0, 0, 0, 0.5);
+
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+  // width: 100%;
+  // height: 100%;
+  // position: fixed;
+  // z-index: 10000000;
+  // left: 0;
+  // top: 0;
+  // background-color: rgba(0, 0, 0, 0.5);
+}
+.keyboard{
+//   position: fixed;
+// width: 100%;height: 100%;
+// left: 0;top: 0;
+// z-index: 100;
+// background: rgba(255,255,255,0);
+}
+.m_keyBoard{
+  // height: 485px;
+  // background-color: #0196ff;
+  // position: absolute;
+  height: 430px;
+  position: fixed;
+  z-index: 100;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 16px 16px 0px 16px;
+  background-color: #f8f8f8;
+  box-shadow: 0px -2px 8px 0px#e5e5e5;
+}
+.m_keyBoard .row{
+  margin-bottom: 16px;
+  display: flex;
+  justify-content: space-around;
+}
+.m_keyBoard .row view{
+  width: 150px;
+  height: 68px;
+  line-height: 68px; 
+  vertical-align: middle;
+  text-align: center;
+  color: #0196ff;
+  background-color: #ffffff;
+	box-shadow: 0px 2px 6px 2px 
+		rgba(221, 221, 221, 0.6);
+	border-radius: 8px;
+  font-size:36px;
+  font-family: PingFangSC-Medium;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.m_keyBoard .rowgray view{
+  color: #333333;
+}
+.m_keyBoard .row view.close image{
+  width: 48px;
+  height: 48px;
+  line-height: 0;
+  font-size:0;
+}
+.m_keyBoard .row view.del image{
+  width: 48px;
+  height: 48px;
+  line-height: 0;
+  font-size:0;
+}
+.m_keyBoard .row view.noBr{
+  border-right: 0 none;
+}
+.m_keyBoard .row view.noBl{
+  border-left: 0 none;
+}
+.m_keyBoard .row view.noBt{
+  border-top: 0 none;
+}
+.m_keyBoard .row view.noBb{
+  border-bottom: 0 none;
+}

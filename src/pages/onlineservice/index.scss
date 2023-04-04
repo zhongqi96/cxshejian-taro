@@ -1,0 +1,153 @@
+.onlineservice-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 750rpx;
+  min-height: 100vh;
+}
+
+.new-onlineservice {
+  padding: 0 60rpx;
+  display: flex;
+  height: 930rpx;
+  flex-direction: column;
+  font-size: 28rpx;
+  color: #999999;
+}
+
+.first-step {
+  margin-top: 136rpx;
+  width: 100%;
+  display: flex;
+}
+.f-text {
+  margin-left: 42rpx
+}
+.s-text {
+  margin-right: 42rpx;
+  text-align: right;
+}
+.second-step {
+  margin-top: 90rpx;
+  width: 100%;
+  display: flex;
+}
+.f-step-img {
+  width: 251rpx;
+}
+.s-step-img {
+  width: 266rpx;
+}
+.step-title {
+  font-size: 36rpx;
+  color: #000000;
+  margin: 20rpx 0;
+}
+.title-num {
+  font-size: 48rpx;
+  color: #000000;
+  margin: 0 15rpx;
+  font-style:italic;
+  font-weight:bold;
+}
+.nohas-account {
+  background-color: #f13e39;
+}
+
+.has-account {
+  background-color: #fff;
+}
+
+.account {
+  position: relative;
+  width: 750rpx;
+}
+
+.onlineservice-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 1040rpx;
+  width: 750rpx;
+  background-color: #f13e39;
+}
+
+.online-title {
+  width: 750rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 600;
+  color: #fff;
+  line-height: 60rpx;
+  margin-top: 160rpx;
+  font-size: 36rpx;
+}
+
+.account-img {
+  width: 619rpx;
+  height: 610rpx;
+}
+
+.no-account {
+  margin-top: 200rpx;
+}
+
+.title-type {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 60rpx;
+}
+
+.customer-btn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100rpx;
+  margin-top: 66rpx;
+}
+
+button::after {
+  border: none;
+}
+
+button {
+  background-color: #fff;
+}
+
+button {
+  border-radius: 0;
+}
+
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.customer-cancel {
+  font-size: 28rpx;
+  color: #f13e3a;
+  /* border-radius: 40rpx; */
+  border-radius: 10rpx;
+  width: 275rpx;
+  height: 89rpx;
+  border: 1px solid #f13e3a;
+  margin-right: 15rpx;
+}
+
+.customer-sure {
+  margin-left: 15rpx;
+  font-size: 28rpx;
+  color: #fff;
+  /* border-radius: 40rpx; */
+  border-radius: 10rpx;
+  background: #f13e3a;
+  width: 275rpx;
+  height: 89rpx;
+  border: 1px solid #f13e3a;
+}

@@ -1,0 +1,334 @@
+/* page/mine/pages/findStation/findStation.wxss */
+page{
+    background: #f8f8f8;
+  }
+  .traveColr{
+    color: #c3c3c3 !important;
+  }
+  .newbaFind{
+    width: 100%;
+    height: 100vh;
+  }
+  .findStation {
+    width: 100%;
+    padding-top: 190rpx;
+    box-sizing: border-box;
+  }
+  .bindStation {
+    width: 100%;
+    padding: 190rpx 0 134rpx 0;
+    box-sizing: border-box;
+  }
+  .finditem{
+      width: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 999;
+  }
+  .tripdate{
+      width: 100%;
+      height: 124rpx;
+      box-sizing: border-box;
+      background: #fff;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 32rpx;
+      box-sizing: border-box;
+  }
+  .calendar{
+      height: 68rpx;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      border: solid 2rpx #dddddd;
+      border-radius: 8rpx;
+      padding: 0 18rpx;
+      box-sizing: border-box;
+  }
+  .calendar text{
+    font-family: PingFangSC-Regular;
+	font-size: 28rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 28rpx;
+    color: #333333;
+    border-right: 1px solid #e5e5e5;
+    padding-right: 15rpx;
+  }
+  .calendar image{
+      display: block;
+      width: 36rpx;
+      height: 36rpx;
+      margin-left: 15rpx;
+  }
+  .railway{
+      height: 68rpx;
+      padding: 0 22rpx 0 25rpx;
+      border: solid 2rpx #dddddd;
+      border-radius: 8rpx;
+      box-sizing: border-box;
+  }
+  .picker{
+   display: flex;
+   height: 68rpx;
+   flex-direction: row;
+   justify-content: space-between;
+   padding-top: 12rpx;
+   box-sizing: border-box; 
+  }
+  .picker text{
+    font-family: PingFangSC-Regular;
+	font-size: 28rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	color: #333333;
+  }
+  .picker image{
+    width: 20rpx;
+    height: 20rpx;
+    margin-top: 8rpx;
+    margin-left: 22rpx;
+  }
+  .choserail{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+  }
+  .choserail image{
+      width: 34rpx;
+      height: 34rpx;
+      margin-right: 13rpx;
+  }
+  .choserail text{
+    font-family: PingFangSC-Regular;
+	font-size: 26rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	color: #666666;
+  }
+  /*行程日期列表*/
+  .topTitle {
+    height:66rpx;
+    width: 100%;
+    font-size: 24rpx;
+    line-height:66rpx;
+    color:#909090;
+    left: 0rpx;
+    top: 0rpx;
+    padding-left: 32rpx;
+    //padding-top: 26rpx;
+    //padding-bottom: 16rpx;
+    background: #f8f8f8;
+    /* min-width: 360rpx;
+    max-width: 686rpx;   */
+    display: flex;
+    /* justify-content: space-between; */
+  }
+  .topTitleFill{
+    width: 100%;
+    height: 86rpx;
+  }
+  .topTitle text {
+    margin-right: 40rpx;
+  }
+  
+  .trip-list {
+      /* margin-top: 86rpx; */
+      background: #ffffff;
+      position: relative;
+      border-bottom: 1px solid #e5e5e5;
+      box-sizing: border-box;
+  }
+  .bodershow{
+    border:2rpx solid #0196ff;
+  }
+  .sureadd{
+      width: 100%;
+      height: 128rpx;
+      background: #fff;
+      padding: 20rpx 30rpx;
+      box-sizing: border-box;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      box-shadow: 0px 0px 6rpx 4rpx 
+      rgba(197, 197, 197, 0.2);
+  }
+  .sureadd .btnadd{
+        width: 100%;
+        height: 100%;
+        line-height: 88rpx;
+        text-align: center;
+        border-radius: 16rpx;
+        font-family: PingFangSC-Medium;
+        font-size: 34rpx;
+        font-weight: normal;
+        font-stretch: normal;
+        color: #ffffff;
+  }
+  .sureadd .truechose{
+    background-color: #0196ff;
+  }
+  .sureadd .falsechose{
+    background-color: #0196ff;
+	opacity: 0.5;
+  }
+  /*行程信息*/
+  .trip-content {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      /* border-radius: 16rpx; */
+      //margin-bottom: 24rpx;
+      height: 160rpx;
+      padding: 28rpx 0;
+      box-sizing: border-box;
+      /* box-shadow: 0 8rpx 24rpx 0rpx rgba(78,95,147,0.12); */
+  }
+
+  .bingstaTion{
+      width: 44rpx;
+      height: 44rpx;
+      position: absolute;
+      top:0;
+      right: 0;
+  }
+  /*行程说明*/
+  .trip-content .t-t {
+      // flex: 1;
+      width:170px;
+      height: 94rpx;
+      font-family: PingFangSC-Regular;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border-right: 2rpx dashed rgba(239,239,239,1);
+  }
+  /*行程简介*/
+  .trip-content .t-t .t-time {
+      font-size: 44rpx;
+      color: #0196ff;
+      font-weight: bold;
+  }
+  /*行程说明*/
+  .trip-content .t-t .t-reg {
+      font-size: 20rpx;
+      color: #777777;
+      margin-top: 10rpx;
+  }
+  /*行程详情*/
+  .trip-content .details {
+      display: flex;
+      flex: 1;
+  }
+  /*出发信息*/
+  .trip-content .details .left {
+      margin-left: 32rpx;
+      flex: 1;
+      text-align: left;
+  }
+  /*历时信息*/
+  .trip-content .details .con {
+      flex: 1;
+      text-align: center;
+  }
+  /*历时多久*/
+  .trip-content .details .con .after {
+      margin-top: 24rpx;
+      font-size: 24rpx;
+      line-height: 34rpx;
+      color: #909090;
+      font-family: PingFangSC-Regular;
+  }
+    /*车类型    */
+    .trip-content .details .con .afterstype {
+        margin-top: 3rpx;
+        font-size: 24rpx;
+        line-height: 34rpx;
+        color: #909090;
+        font-family: PingFangSC-Regular;
+    }
+  /*历时动画*/
+  .trip-content .details .con .ani {
+      width: 181rpx;
+      height: 14rpx;
+      display: block;
+  }
+  
+  /*到达信息*/
+  .trip-content .details .right {
+      margin-right: 60rpx;
+      flex: 1;
+      text-align: right;
+  }
+  /*出发到达站*/
+  .start, .end {
+      font-size: 28rpx;
+      line-height: 40rpx;
+      color: rgb(144,144,144);
+      margin-bottom: 6rpx;
+      font-family: PingFangSC-Regular;
+  }
+  /*出发到达时间*/
+  .start-time, .end-time {
+      font-size: 40rpx;
+      line-height: 56rpx;
+      color: rgb(50,50,50);
+      // margin-bottom: 20rpx;
+      font-weight: 600;
+      font-family: PingFangSC-Regular;
+      position: relative;
+  }
+
+  .end-time .daysNum{
+    position: absolute;
+    top:-20rpx;
+    right: -45rpx;
+    font-family: 'PingFangSC-Regular';
+    font-size: 20px;
+    letter-spacing: 0px;
+    color: #2ab575;
+    font-weight: normal;
+	  font-stretch: normal;
+  }
+
+  .daysNumAlp{
+    opacity: 0.6;
+  }
+
+  /*出发到达日期*/
+  .start-date, .end-date {
+      font-size: 24rpx;
+      line-height: 24rpx;
+      color: rgb(144,144,144);
+      margin-bottom: 30rpx;
+      font-family: PingFangSC-Regular;
+  }
+
+  .bottomtext{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25rpx 0;
+    width: 100%;
+    background: #f8f8f8;
+    box-sizing: border-box;
+  }
+
+  .bottomtext text{
+    font-family: PingFangSC-Regular;
+    font-size: 26rpx;
+    font-weight: normal;
+    font-stretch: normal;
+    letter-spacing: 0px;
+    color: #999999;
+    text-align: center;
+  }

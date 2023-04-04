@@ -1,0 +1,395 @@
+.has-distance{
+  color: #333;
+  .top-content{
+    position: relative;
+    overflow: hidden;
+  }
+  .fixed-boll{
+    position: absolute;
+    right: 0;
+    top: 260px;
+    width: 1px;
+    height: 1px;
+    z-index: 100;
+    .main-boll,.boll-item{
+      width: 80px;
+      height: 80px;
+      border-radius: 80px;
+      background: rgba(200,200,200,0.5);
+      font-size: 24px;
+      color: #FFF;
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      text-align: center;
+      line-height: 80px;
+      transition: all 0.1s;
+    }
+    .main-boll{
+      right: 10px;
+      z-index: 1;
+      text-align: center;
+      line-height: 80px;
+      color: #FFF;
+      &.active{
+        background: rgba(255,255,255,0.5)
+      }
+    }
+    .boll-item{
+      opacity: 0;
+      transition: all 0.2s;
+    }
+    .boll-menu-bg{
+      overflow: hidden;
+      width: 80px;
+      height: 80px;
+      border-radius: 80px;
+      position: absolute;
+      top: 50%;
+      right: 10px;
+      transform: translateY(-50%);
+      background: rgba(0,0,0,0.4);
+      opacity: 0.1;
+      transition: all 0.1s;
+      &.active{
+        width: 420px;
+        height: 440px;
+        border-radius: 100%;
+        opacity: 1;
+        top: 50%;
+        right: -120px;
+      }
+    }
+    .boll-img{
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .boll-text{
+      font-size: 20px;
+      color: #FFF;
+      position: absolute;
+      bottom: -55px;
+      left: 50%;
+      width: 100px;
+      transform: translateX(-50%);
+    }
+
+    .boll-item{
+      &.active{
+        opacity: 1;
+      }
+      &.boll-item1.active{
+        top: -150px;
+        right: 60px;
+      }
+      &.boll-item2.active{
+        top: -70px;
+        right: 170px;
+      }
+      &.boll-item3.active{
+        top: 65px;
+        right: 170px;
+      }
+      &.boll-item4.active{
+        top: 140px;
+        right: 60px;
+      }
+    }
+
+  }
+  .city-recommend{
+    margin-top: -45px;
+    box-shadow: none;
+  }
+
+
+  /*车票信息*/
+  .ticket{
+    padding-top: 28px;
+    margin: 0 20px;
+    background: #e4f2ff;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    .top-msg,.bottom-msg,.foot-msg{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 30px;
+    }
+    .bottom-msg{
+      padding: 40px 50px;
+    }
+    .date{
+      font-size: 30px;
+      font-weight: bold;
+    }
+    .customer-name{
+      font-size: 26px;
+    }
+    .tip-text{
+      border-radius: 40px;
+      padding: 0 20px;
+      height: 40px;
+      text-align: center;
+      color: #FFF;
+      font-size: 24px;
+      line-height: 40px;
+      background: #1eb0ff;
+      position: relative;
+      &:after{
+        content: "";
+        width: 20px;
+        height: 20px;
+        background: #1eb0ff;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+      }
+    }
+    .name{
+      display: block;
+      margin-bottom: 18px;
+      font-size: 42px;
+      text-align: center;
+    }
+    .time{
+      font-size: 30px;
+    }
+    .center-msg{
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+    .train{
+      font-size: 32px;
+    }
+    .icon{
+      height: 4px;
+      background: #95abb9;
+      width: 234px;
+      position: relative;
+      margin: 15px 0;
+      &:before{
+        content: "";
+        height: 4px;
+        width: 40px;
+        background: #95abb9;
+        position: absolute;
+        right: 0;
+        bottom: 11px;
+        transform: rotate(30deg)
+      }
+    }
+    .long-time{
+      font-size: 24px;
+      color: #666;
+    }
+    .foot-msg{
+      margin-top: 28px;
+      .small-text{
+        display: block;
+        margin-bottom: 18px;
+        font-size: 24px;
+        color: #666;
+      }
+      .big-text{
+        font-size: 28px;
+      }
+    }
+
+    .bottom-space{
+      height: 32px;
+      width: 100%;
+      margin-top: 20px;
+      display: block;
+      background: #caecff;
+    }
+  }
+
+  /*途经城市*/
+  .road-city{
+    margin-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    align-items: center;
+    z-index: 2;
+    position: relative;
+    &.has-recommend{
+      padding-bottom: 0;
+    }
+    .city-context{
+      font-size: 28px;
+      color: #27a3ff;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 200px;
+      text-align: center;
+    }
+    .name{
+      font-size: 28px;
+      font-weight: bold;
+    }
+    .city-scroll-box{
+      flex: 1;
+      height: 140px;
+    }
+    .city-list{
+      width: 100%;
+      position: relative;
+      height: 140px;
+    }
+    .swiper-item{
+      height: auto;
+      overflow: inherit;
+      display: flex;
+      justify-content: center;
+    }
+    .city{
+      display: inline-block;
+      height: 140px;
+      vertical-align: middle;
+      &:first-child{
+        margin-left: 0px;
+      }
+    }
+    .city-content{
+      width: 80px;
+      font-size: 20px;
+      color: #4bb1fd;
+      margin: 0 36.5px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      height: 140px;
+      // transition: all 0.2s;
+      .city-icon{
+        width: 36px;
+        height: 36px;
+        border-radius: 100%;
+        background: rgba(39,163,255, 1);
+        position: relative;
+        font-size: 16px;
+        color: #FFF;
+        text-align: center;
+        line-height: 36px;
+        transition: all 0.2s;
+      }
+      .city-img{
+        width: 0;
+        height: 0;
+        opacity: 0;
+        transition: all 0.2s;
+      }
+      .city-name{
+        margin-top: 8px;
+        position: absolute;
+        width: 100px;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        transition: all 0.2s;
+        &.transparent{
+          color: #FFF;
+        }
+      }
+      .city-line-left,.city-line-right{
+        position: absolute;
+        right: -71px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 12px;
+        height: 12px;
+        border-radius: 100%;
+        background: #caecff;
+        &:before,&:after{
+          content: "";
+          width: 12px;
+          height: 12px;
+          border-radius: 100%;
+          position: absolute;
+          left: 26px;
+          top: 50%;
+          transform: translateY(-50%);
+          background: #caecff;
+        }
+        &:before{
+          left: -26px;
+          background: #caecff;
+        }
+      }
+      .city-line-left{
+        right: auto;
+        left: -71px;
+      }
+      &.active{
+        font-size: 30px;
+        .city-icon{
+          width: 60px;
+          height: 60px;
+          background: rgba(39,163,255, 0);
+        }
+        .city-img{
+          width: 60px;
+          height: 60px;
+          opacity:1;
+        }
+        .background{
+          background: #27a3ff;
+        }
+        .city-name{
+          bottom: 0px;
+        }
+      }
+
+    }
+    .begin-city{
+      flex: 0 0 70px;
+      margin-right: 0;
+      .city-icon:before{
+        content: "始发";
+        font-size: 20px;
+        color: #333;
+        position: absolute;
+        width: 70px;
+        top: -34px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+    .end-city{
+      flex: 0 0 70px;
+      margin-left: 0;
+      .city-icon:before{
+        content: "终点";
+        width: 70px;
+        font-size: 20px;
+        color: #333;
+        position: absolute;
+        top: -34px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+  }
+  .white-bg{
+    width: 250px;
+    height: 200px;
+    border-radius: 100%;
+    background: #FFF;
+    margin: 0 auto;
+    margin-top: -170px;
+    z-index: 1;
+    position: relative;
+  }
+}

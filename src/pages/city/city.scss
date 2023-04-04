@@ -1,0 +1,275 @@
+/* page/mine/pages/stationName/stationName.wxss */
+.page {
+    height: 100%;
+  }
+  scroll-view {
+    // height: 1182rpx;
+    position: relative;
+    overflow: auto;
+    background: #fff;
+  }
+  .sCs {
+    position: relative;
+    top: 32rpx;
+    display:flex;
+  }
+  /*搜索栏*/
+  .serach {
+    height: 44rpx;
+    padding: 18rpx 0;
+    border-radius: 16rpx;
+    margin: 0 32rpx;
+    font-size: 24rpx;
+    box-shadow: 0 8rpx 24rpx rgba(78,95,147,0.12);
+    padding-left: 80rpx;
+    padding-right: 96rpx;
+    position: relative;
+    width: 100%;
+  }
+  /*所有城市列表*/
+  .allCity {
+    display: blcok;
+    padding-top: 32rpx;
+  }
+  /*筛选城市列表*/
+  .filter {
+    display: block;
+    margin-top: 64rpx;
+    height: 88vh;
+    overflow:scroll;
+  }
+  /*筛选城市*/
+  .filter-item {
+    height: 90rpx;
+    border-bottom: 1rpx solid #efefef;
+    line-height: 90rpx;
+    background: #ffffff;
+    font-size: 28rpx;
+    color: #323232;
+    padding: 0 32rpx;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    view{
+      display:inline-block;
+      &.city{
+        width:48rpx;
+        height: 30rpx;
+        line-height: 30rpx;
+        text-align: center;
+        background:#0196ff;
+        border-radius: 4rpx;
+        color: #fff;
+        font-size: 20rpx;
+        margin-right: 20rpx;
+        position: relative;
+        top: -1rpx;
+      }
+      &.station{
+        background:#7ea5c1; 
+      } 
+    }
+    text{
+      font-size: 28rpx;
+      color: #333333;
+    }
+    .clour{
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      width: 70%;
+      font-size:28rpx;
+      color:#333333;
+    }
+  }
+  /*搜索栏图片*/
+  .sImg {
+    width: 46rpx;
+    height: 44rpx;
+    position: absolute;
+    top: 20rpx;
+    left: 56rpx;
+    z-index: 999;
+  }
+  .cImg {
+    width: 32rpx;
+    height: 32rpx;
+    position: absolute;
+    top: 26rpx;
+    right: 64rpx;
+    z-index: 999;
+  }
+  .sSousuo{
+    height: 44rpx;
+    color: #323232;
+    font-size: 32rpx;
+    padding-left: 32rpx;
+    border-left: 4rpx solid #efefef;
+    position: absolute;
+    top: 24rpx;
+    right: 56rpx;
+  }
+  /*所在城市*/
+  .location, .hotCity, .historyCity {
+    color: #909090;
+    font-size: 28rpx;
+    line-height: 40rpx;
+    height: 40rpx;
+    margin-left: 32rpx;
+    margin-top: 32rpx;
+    margin-bottom: 24rpx;
+  }
+  .historyCity {
+    width: 628rpx;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    .clearhistory{
+      color: #0196ff;
+    }
+  }
+  /*所在城市列表*/
+  .location-list, .hotCity-list {
+    width: 660rpx;
+    margin-left: 32rpx;
+    display: flex !important;
+    margin-bottom: 26rpx;
+    flex-wrap: wrap;
+  }
+  /*所在地名称*/
+  .location-item{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .location-item, .hotCity-item {
+    width: 188rpx;
+    height: 64rpx;
+    border-radius: 8rpx;
+    line-height: 64rpx;
+    text-align: center;
+    color: #323232;
+    font-size: 28rpx;
+    background: #efefef;
+    margin-right: 32rpx;
+    margin-bottom: 32rpx;
+  }
+  .location-item image{
+    display: block;
+    width: 34rpx;
+    height: 34rpx;
+    margin-right: 10rpx;
+  }
+  /* 没有定位文字 */
+  .location-list .no_scoped{
+    font-family: PingFangSC-Medium;
+    font-size: 28rpx;
+    font-weight: normal;
+    font-stretch: normal;
+    color: #333333;
+  }
+  .no_scoped text{
+    color: #0196ff;
+    margin-left: 10rpx;
+  }
+  /*城市首字母*/
+  .type {
+    height: 48rpx;
+    color: #0095ff;
+    font-size: 28rpx;
+    line-height: 48rpx;
+    text-indent: 32rpx;
+    background: #f5f5fa;
+  }
+  /*城市名称*/
+  .cityName {
+    height: 90rpx;
+    border-bottom: 1rpx solid #efefef;
+    line-height: 90rpx;
+    background: #ffffff;
+    font-size: 28rpx;
+    color: #323232;
+    text-indent: 32rpx;
+  }
+  /*右侧导航栏*/
+  .navRight {
+    display: block;
+    width: 40rpx;
+    position: fixed;
+    top: 140rpx;
+    right: 28rpx;
+    line-height:26rpx;
+    z-index: 9999;
+    .text{
+      font-size: 20rpx;
+      color: #999999;
+      padding: 12rpx 0 ;
+    }
+  }
+  .bigChar1{
+    width:108rpx;
+    height: 88rpx;
+    line-height: 88rpx; 
+    font-size: 55rpx;
+    color:#ffffff;
+    position: absolute;
+    top: -20rpx;
+    right: 56rpx;
+    z-index: 999;
+    display: block;
+    background: url('https://www.cx9z.com/h5/tarocx9z/czt_v1/stationChange/fangda_bj.png') no-repeat;
+    background-size: 100% 100%;
+    padding: 0 35rpx 0 20rpx;
+    box-sizing: border-box;
+    z-index: 999;
+  }
+  /*右侧导航栏选项*/
+  .letter {
+    font-size: 20rpx;
+    padding: 13rpx 0 0 0;
+    width: 28rpx;
+    line-height: 28rpx;
+    text-align: center;
+    margin-bottom: 2rpx;
+    position: relative;
+    z-index: 10;
+    margin-left:7rpx; 
+    position: relative;
+    .newletter{
+      width: 28rpx;
+      height: 28rpx;
+      border-radius: 28rpx;
+      background:none;
+      color: #909090;
+      &.cur{
+        background: #0196ff;
+        color: #ffffff;
+      }
+    } 
+    .bigChar{
+      width:108rpx;
+      height: 88rpx;
+      line-height: 88rpx; 
+      font-size: 60rpx;
+      color:#ffffff;
+      position: absolute;
+      top: -20rpx;
+      right: 56rpx;
+      z-index: 999;
+      display: none;
+      background: url('https://www.cx9z.com/h5/tarocx9z/czt_v1/stationChange/fangda_bj.png') no-repeat 0 0;
+      background-size: cover;
+      text-align: left;
+      text-indent:19rpx;
+    } 
+  }
+  /*导航栏图标*/
+  .SH {
+    width: 24rpx;
+    height: 24rpx;
+    left: 4rpx;
+    top: -48rpx;
+    position: absolute;
+  }

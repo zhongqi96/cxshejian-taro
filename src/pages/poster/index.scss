@@ -1,0 +1,110 @@
+.poster-body,.poster-section {
+  width: 750rpx;
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  background-color: #fff;
+  flex-direction: column;
+}
+.title {
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+  width: 302rpx;
+  height: 40rpx;
+}
+.copy-toast {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  width: 302rpx;
+  height: 60rpx;
+  border-radius: 30rpx;
+  font-size: 24rpx;
+  background-color: #F13E3B;
+}
+.poster-section-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: yellowgreen; */
+  width: 450rpx;
+  flex: 1;
+}
+.product-title {
+  padding: 0 30px;
+  box-sizing: border-box;
+  width: 750rpx;
+  font-size: 28rpx;
+  color: #666666;
+  margin-top: 20rpx;
+}
+.product-title-content {
+  overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+}
+.copy-box {
+  margin-top: 25rpx;
+  margin-bottom: 22rpx;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 154rpx;
+  height: 34rpx;
+  font-size: 24rpx;
+  color: #DE4E44;
+  border: 1px solid #D14D42;
+  border-radius: 17rpx;
+}
+.copy-btn {
+  height: 20rpx;
+  width: 20rpx;
+}
+.poster-section-bottom {
+  display: flex;
+  height: 260rpx;
+  width: 750rpx;
+  border-top: 1rpx solid #CCCCCC;
+}
+
+.bottom-left {
+  padding-left: 40rpx;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  width: 408rpx;
+  font-size: 28rpx;
+  height: 100%;
+  font-family: "Adobe Heiti Std R";
+  color: #666666;
+}
+.bottom-right {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex: 1;
+  height: 100%;
+}
+.share {
+  width: 100rpx;
+  height: 100rpx;
+}
+button[plain]
+{ border:0;
+  margin: 0;
+  padding: 0;
+  height: 100rpx;
+  width: 100rpx;
+}
+.download {
+  width: 100rpx;
+  height: 100rpx;
+}
+.commission {
+  font-size: 32rpx;
+  color: #FF001D;
+}

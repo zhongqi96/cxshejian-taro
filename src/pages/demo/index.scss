@@ -1,0 +1,165 @@
+.demo {
+  flex-direction: column;
+  width: 100%;
+  .tab-box{
+    width: 100%;
+    white-space: nowrap;
+  }
+  .tab-list{
+
+  }
+  .tab-item{
+    width: 200px;
+    height: 60px;
+    line-height: 60px;
+    display: inline-block;
+    color: #FFF;
+    background: #1ba4eb;
+    font-size: 28px;
+    text-align: center;
+    border-right: 2px solid #FFF;
+    &.active{
+      background: #00cc64;
+      color: #fda26a;
+    }
+  }
+
+  /*途经城市*/
+  .road-city{
+    margin-top: 70px;
+    display: flex;
+    align-items: center;
+    z-index: 2;
+    position: relative;
+    .city-context{
+      font-size: 28px;
+      color: #27a3ff;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 200px;
+      text-align: center;
+    }
+    .name{
+      font-size: 28px;
+      font-weight: bold;
+    }
+    .city-scroll-box{
+      flex: 1;
+      overflow: hidden;
+    
+    }
+    .city-list{
+      width: 100%;
+      white-space: nowrap;
+    }
+    .city{
+      flex: 0 0 80px;
+      font-size: 20px;
+      color: #4bb1fd;
+      margin: 0 30px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      // transition: all 0.2s;
+      .city-icon{
+        width: 36px;
+        height: 36px;
+        border-radius: 100%;
+        background: #27a3ff;
+        position: relative;
+        font-size: 16px;
+        color: #FFF;
+        text-align: center;
+        line-height: 36px;
+      }
+      .city-img{
+        width: 60px;
+        height: 60px;
+      }
+      .city-name{
+        margin-top: 8px;
+        &.transparent{
+          color: #FFF;
+        }
+      }
+      .city-line-left,.city-line-right{
+        position: absolute;
+        right: -57px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 12px;
+        height: 12px;
+        border-radius: 100%;
+        background: #caecff;
+        &:before,&:after{
+          content: "";
+          width: 12px;
+          height: 12px;
+          border-radius: 100%;
+          position: absolute;
+          left: 26px;
+          top: 50%;
+          transform: translateY(-50%);
+          background: #caecff;
+        }
+        &:before{
+          left: -26px;
+          background: #caecff;
+        }
+      }
+      .city-line-left{
+        right: auto;
+        left: -57px;
+      }
+      &.active{
+        font-size: 30px;
+        padding-top: 21px;
+        .city-icon{
+          width: 60px;
+          height: 60px;
+          background: transparent;
+        }
+        .background{
+          background: #27a3ff;
+        }
+        .city-name{
+          margin-top: 14px;
+          width: 120px;
+        }
+      }
+
+    }
+    .begin-city{
+      flex: 0 0 70px;
+      margin-right: 0;
+      .city-icon:before{
+        content: "始发";
+        font-size: 20px;
+        position: absolute;
+        width: 70px;
+        top: -34px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+    .end-city{
+      flex: 0 0 70px;
+      margin-left: 0;
+      .city-icon:before{
+        content: "终点";
+        width: 70px;
+        font-size: 20px;
+        position: absolute;
+        top: -34px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+  }
+
+
+}

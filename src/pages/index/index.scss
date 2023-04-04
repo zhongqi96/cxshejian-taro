@@ -1,0 +1,332 @@
+.home-page {
+  width: 100%;
+  padding-bottom: 30px;
+  box-sizing: border-box;
+  color: #333;
+  line-height: 1;
+  background: #F8F8F8;
+  /*顶部轮播图*/
+  .top-scroll-box{
+    height: 420px;
+    .scroll-img{
+      height: 600px;
+      width: 100%;
+    }
+  }
+  .page-content{
+    padding: 0 20px;
+    margin-top: -80px;
+    &.page-content-top{
+      margin-top: -80px;
+    }
+  }
+  .top-sec{
+    background: #FFF;
+    border-radius: 30px;
+    padding-top: 30px;
+    position: relative;
+    box-shadow: 0px 2px 12px 0px
+    rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+  }
+
+  .top-img{
+    width: 100%;
+    height: 600px;
+    background: #abd0bc;
+    border-radius: 8px;
+  }
+
+  .city-recommend{
+    background: #FFF;
+    border-radius: 30px;
+    padding: 30px 20px;
+    box-shadow: 0px 2px 12px 0px
+    rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+    margin-top: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .recommend-item{
+      flex: 1;
+      width: 208px;
+      height: 168px;
+      margin-right: 12px;
+      position: relative;
+      &:last-child{
+        margin-right: 0;
+      }
+    }
+    .recommend-img{
+      width: 100%;
+      height: 100%;
+    }
+    .recommend-text{
+      font-size: 24px;
+      color: #FFF;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: 8px;
+      width: 100%;
+      text-align: center;
+    }
+
+  }
+
+  /*建行开卡、免费试吃*/
+  .sec-middle{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    .foretaste,.open-card{
+      width: 335px;
+      height: 160px;
+      overflow: hidden;
+      flex: 1;
+      border-radius: 8px;
+      background: #e8edff;
+      position: relative;
+      padding: 30px;
+      box-sizing: border-box;
+    }
+    .open-card{
+      background: #ffede4;
+      margin-left: 20px;
+    }
+    .taste-img,.card-img{
+      position: absolute;
+      right: 20px;
+    }
+    .taste-img{
+      width: 114px;
+      height: 114px;
+      bottom: 18px;
+    }
+    .card-img{
+      width: 96px;
+      height: 72px;
+      bottom: 28px;
+    }
+    .text{
+      margin-top: 9px;
+      font-size: 24px;
+      color: #333;
+      position: relative;
+      z-index: 1;
+    }
+  }
+  /*中部轮播图*/
+  .scroll-box{
+    height: 200px;
+    margin-top: 30px;
+    .scroll-img{
+      height: 200px;
+      width: 100%;
+      border-radius: 8px;
+    }
+  }
+
+  /*美食推荐*/
+  .crew-food{
+    .title{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 30px;
+    }
+    .name{
+      font-size: 28px;
+      font-weight: bold;
+    }
+    .icon{
+      font-size: 22px;
+      color: #999;
+      margin-right: 10px;
+      display: flex;
+      align-items: center;
+      &:after{
+        content: "";
+        width: 12px;
+        height: 18px;
+        background: url("../../static/img/index/more.png");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        margin-left: 5px;
+      }
+    }
+    .goods-box{
+      margin-top: 28px;
+      display: flex;
+      align-items: center;
+    }
+    .goods-item{
+      margin-right: 20px;
+      border-radius: 8px;
+      box-shadow: 0px 2px 6px 0px
+      rgba(0, 0, 0, 0.2);
+      flex: 1;
+      overflow: hidden;
+      &:last-child{
+        margin-right: 0;
+      }
+    }
+    .goods-img{
+      height: 252px;
+      width: 100%;
+    }
+    .goods-title{
+      margin-top: 30px;
+      font-size: 24px;
+      font-weight: bold;
+      padding: 0 20px;
+    }
+    .goods-msg{
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .price{
+      font-size: 32px;
+      font-weight: bold;
+    }
+    .pre-price{
+      font-size: 22px;
+      color: #999;
+      margin-left: 15px;
+      flex: 1;
+      text-decoration: line-through;
+    }
+    .buy-btn{
+      font-size: 24px;
+      color: #FFF;
+      padding: 10px 20px;
+      border-radius: 40px;
+      background: #ff6242;
+    }
+  }
+
+  .good-recommend{
+    background: #FFF;
+    border-radius: 30px;
+    padding: 30px 20px;
+    box-shadow: 0px 2px 12px 0px
+    rgba(0, 0, 0, 0.05);
+    margin-top: 16px;
+    .recommend-title{
+      font-size: 32px;
+      font-weight: bold;
+    }
+    .tab-list{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      font-size: 28px;
+      .tab-item{
+        padding: 0 20px;
+        padding-bottom: 16px;
+        position: relative;
+        padding-top: 35px;
+        .tab-text{
+          position: relative;
+          &:before{
+            content: "";
+            height: 6px;
+            width: 100%;
+            border-radius: 6px;
+            background: transparent;
+            position: absolute;
+            bottom: -12px;
+            left: 0;
+            transition: all 0.2s;
+          }
+        }
+        
+      }
+      .active{
+        color: #27a3ff;
+        .tab-text:before{
+          background: #27a3ff;
+        }
+      }
+    }
+    .recommend-list{
+      padding-top: 26px;
+      .recommend-item{
+        margin-bottom: 40px;
+        padding: 20px 0;
+        width: 100%;
+        background: #FFF;
+        box-shadow: 0px 2px 14px 0px
+        rgba(0, 0, 0, 0.2);
+      }
+      .recommend-img{
+        width: 100%;
+        height: 338px;
+        margin-bottom: 15px;
+      }
+      .recommend-title{
+        font-size: 28px;
+        line-height: 1.4;
+        padding: 0 20px;
+        margin-bottom: 25px;
+        word-break: break-all;
+        text-overflow:ellipsis;
+        overflow:hidden;
+        display:-webkit-box;
+        -webkit-line-clamp:2;
+        -webkit-box-orient:vertical;
+      }
+      .city{
+        font-size: 28px;
+        color: #9f9f9f;
+      }
+      .recommend-msg{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+      }
+      .right-msg{
+        display: flex;
+        align-items: center;
+      }
+      .unit{
+        font-size: 26px;
+        color: #f51e34;
+        margin-right: 5px;
+        margin-bottom: -6px;
+      }
+      .price{
+        font-size: 42px;
+        color: #f51e34;
+        margin-right: 5px;
+      }
+      .buy-btn{
+        font-size: 26px;
+        color: #FFF;
+        padding: 14px 30px;
+        border-radius: 40px;
+        margin-left: 10px;
+        background: linear-gradient(90deg, #f41f34, #f3620c);
+      }
+    }
+  }
+  .pay{
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    color: #f00;
+    font-size: 28px;
+    border: 1px solid #27a3ff;
+    border-radius: 8px;
+    z-index: 10;
+    position: relative;
+    background: #FFF;
+  }
+
+
+}

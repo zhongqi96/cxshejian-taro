@@ -1,0 +1,85 @@
+.no-distance{
+  color: #333;
+  .title{
+    font-size: 34px;
+    padding: 0 20px;
+  }
+  .distance-tip{
+    display: flex;
+    align-items: center;
+    margin-top: 23px;
+    padding: 0 20px;
+    .add-icon{
+      width: 28px;
+      height: 28px;
+    }
+    .tip-text{
+      color: #999;
+      font-size: 28px;
+      margin: 0 12px;
+    }
+    .right-icon{
+      width: 14px;
+      height: 25px;
+    }
+  }
+  /*上部四个入口*/
+  .inter-list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 35px;
+  }
+  .inter-item{
+    width: 144px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 26px;
+    .icon{
+      width: 90px;
+      height: 90px;
+      margin-bottom: 22px;
+    }
+  }
+
+  /*定位*/
+  .fixed-position{
+    margin-top: 35px;
+    font-size: 26px;
+    font-weight: bold;
+    height: 60px;
+    line-height: 60px;
+    background: #e1e1e1;
+    padding: 0 20px;
+    &.active{
+      background:  #caecff;
+    }
+    &.has-recommend{
+      background: none;
+    }
+    .setting{
+      color: #39aaff;
+      font-size: 28px;
+      display: inline;
+      border: 0;
+      padding: 0;
+      background: transparent;
+      line-height: 1;
+      &:after{
+        width: 0;
+        height: 0;
+        border: 0
+      }
+    }
+  }
+
+  /*城市推荐*/
+  .city-recommend{
+    margin-top: 0;
+    box-shadow: none;
+    padding-top: 6px;
+  }
+}

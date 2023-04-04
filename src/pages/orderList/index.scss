@@ -1,0 +1,108 @@
+.order-list {
+  background-color: #f3f3f3;
+  overflow: hidden;
+  .auth {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    .logo {
+      width: 462px;
+      height: 215px;
+    }
+    .btn {
+      margin-top: 80px;
+      width: 554px;
+      height: 78px;
+      line-height: 78px;
+      font-size: 36px;
+      border-radius: 38px;
+      background: #f3ac2e;
+      color: #FFFFFF;
+      &::after {
+        border: none;
+      }
+    }
+  }
+  .order-type {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 120px;
+    line-height: 120px;
+    box-sizing: border-box;
+    font-size: 30px;
+    color: #333333;
+    background: linear-gradient(to right, #ffed8c, #ffb100);
+    .type {
+      align-self: stretch;
+      transition: all .3s;
+      &:not(:last-child) {
+        margin-right: 96px;
+      }
+      &.active {
+        font-size: 34px;
+        font-weight: bold;
+      }
+    }
+  }
+  .order-list-container {
+    height: calc(100vh - 206px);
+    padding: 24px 30px;
+    box-sizing: border-box;
+  }
+  .no-data {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    & > image {
+      width: 634px;
+    }
+    .tip {
+      transform: translateY(-120px);
+      font-size: 30px;
+      color: #999;
+    }
+  }
+
+  .tab-box{
+    display: flex;
+    align-items: center;
+    .tab-item{
+      height: 90px;
+      line-height: 90px;
+      text-align: center;
+      color: #333;
+      font-size: 26px;
+      transition: all 0.2s;
+      position: relative;
+      flex: 1;
+      &:after{
+        content: "";
+        width: 0;
+        height: 2px;
+        background: #1ba4eb;
+        transition: all 0.2s;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      &.active{
+        color: #1ba4eb;
+      }
+      &.active:after{
+        width: 100%;
+      }
+    }
+  }
+
+}
+
+.at-divider__content {
+  background-color: #f3f3f3;
+}

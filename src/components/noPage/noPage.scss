@@ -1,0 +1,42 @@
+
+//重新加载页面
+.noPage{
+  height: 100vh;
+  // display: flex;
+  font-size: 32px;
+  font-size: inherit;
+  color: inherit;
+  line-height: inherit;
+  // justify-content:center; 
+  // align-items: center;
+  overflow: hidden;
+  background-color: #ffffff;
+
+  .noPage_c{
+    margin:200px auto 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    .img{
+      width:444px;
+      height:250px;
+    }
+    text{
+      color:#666;
+      margin:40px auto;
+    }
+    .btn{
+      font-size:34px;
+      width: 240px;
+      height:80px;
+      line-height: 80px;
+      background: #0196ff;
+      border-radius: 0;
+      color: #ffffff;
+    }
+    
+    .btn-radius {
+      border-radius: 8px;
+    }
+  }
+}

@@ -1,0 +1,110 @@
+$color-brand: #f8b02a;
+$main-text: #333333;
+$info-text: #666666;
+$secondary-text: #999999;
+
+#app, page {
+  background-color: #f8f8f8;
+}
+
+// 表单样式
+.form-container {
+  padding: 0 30px;
+  background-color: #FFFFFF;
+  border-radius: 5px;
+  .form-item {
+    display: flex;
+    align-items: center;
+    padding: 24px 0;
+    position: relative;
+    &:not(:last-child) {
+      border-bottom: 1px solid #f0f0f0;
+    }
+    .title {
+      flex: 0 0 240px;
+      font-size: 26px;
+      color: $main-text;
+    }
+    & > text {
+      flex: 0 0 240px;
+      font-size: 26px;
+      color: $main-text;
+    }
+    & > input,
+    & > view,
+    & > picker {
+      padding: 0;
+      flex: 1 1 auto;
+      font-size: 26px;
+      color:$secondary-text;
+    }
+    radio {
+      & + text {
+        margin-right: 24px;
+      }
+    }
+    radio:not(:last-child) {
+      margin-right: 24px;
+    }
+    .input-placeholder {
+      font-size: 26px;
+      color: $secondary-text;
+    }
+    .code-btn {
+      flex: 0 0 196px;
+      height: 60px;
+      line-height: 60px;
+      border-radius: 30px;
+      background: linear-gradient(to right, #ffcf5d, #ffbe2b);
+      font-size: 24px;
+      border: none;
+      color: $main-text;
+      &::after {
+        border: none;
+      }
+    }
+    .icon {
+      flex: 0 0 85px;
+      height: 44px;
+    }
+    .content {
+      flex: 1 1 auto;
+    }
+    &.selection::after {
+      content: '';
+      width: 11px;
+      height: 18px;
+      background: url("./static/img/createOrder/arrow_right.png") no-repeat center/11px 18px;
+    }
+  }
+}
+
+// 底部按钮样式
+.btn-container {
+  position: relative;
+  margin-top: 72px;
+  .btn {
+    margin: 0 auto;
+    width: 554px;
+    height: 78px;
+    line-height: 78px;
+    border-radius: 39px;
+    background: #f3ac2e;
+    color: #FFFFFF;
+    font-size: 36px;
+    border: none;
+    outline: none;
+    text-align: center;
+    &::after {
+      border: none;
+    }
+  }
+}
+
+
+// 分割线
+.separated {
+  width: 2px;
+  height: 84px;
+  background-color: #d8d8d8;
+}
